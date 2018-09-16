@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+
+      <div
+        class="canvas-gb"
+      >
+        <div
+          class="row"
+          style="float: left; margin: 0 !important;"
+          *ngFor="let vertical of avatarColorList; let i = index">
+          <div
+            *ngFor="let color of vertical; let j = index"
+            class="square-gb color-gb-{{color}}"
+            (click)="changeColor(i, j)"
+          >
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-2">
+        <div class="col-3 btn-group justify-content-center">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            (click)="clearCanvas()"
+          >Limpiar</button>
+        </div>
+        <div class="col-3 btn-group justify-content-center">
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            (click)="sendImage()"
+          >Enviar</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-4">
+      row of images
+    </div>
+  </div>
+</div>

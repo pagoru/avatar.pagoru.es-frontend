@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  border-radius: 0 !important;
+}
+
+.canvas-gb {
+  display: table;
+  width: 256px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square-gb {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.color-gb-0 {
+  background-color: #0f380f;
+}
+
+.color-gb-1 {
+  background-color: #306230;
+}
+
+.color-gb-2 {
+  background-color: #8bac0f;
+}
+
+.color-gb-3 {
+  background-color: #9bbc0f;
+}
